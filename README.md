@@ -84,7 +84,7 @@ El sistema permite administrar usuarios, relatos, categorías, comentarios y fav
 # 📂 Arquitectura del Proyecto
 
 ```bash
-📦 relatos-backend
+📦 BackendPlataformaRelatosPapel
 ├── 📂 controller
 │   ├── UsuarioController.java
 │   ├── RelatoController.java
@@ -221,13 +221,13 @@ CREATE TABLE comentarios (
 ### Clonar repositorio
 
 ```bash
-git clone https://github.com/isair/relatos-backend.git
+git clone https://github.com/isairey/BackendPlataformaRelatosPapel.git
 ```
 
 ### Entrar al proyecto
 
 ```bash
-cd relatos-backend
+cd BackendPlataformaRelatosPapel
 ```
 
 ### Configurar Base de Datos
@@ -319,7 +319,7 @@ Authorization: Bearer TOKEN
 
 <div align="center">
 
-## ISAI REYES PEÑA
+## ISAI REYES 
 
 ### Desarrollador Full Stack | Spring Boot | Java | Bases de Datos
 
@@ -352,6 +352,6 @@ Puedes utilizarlo, modificarlo y distribuirlo libremente.
 
 ### ⭐ Si te gusta este proyecto, considera darle una estrella en GitHub ⭐
 
-**Desarrollado con ❤️ por ISAI REYES PEÑA**
+**Desarrollado con ❤️ por ISAI REYES**
 
 </div>
