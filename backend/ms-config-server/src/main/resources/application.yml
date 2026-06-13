@@ -1,0 +1,26 @@
+server:
+  port: 7777
+
+spring:
+  application:
+    name: ms-config-server
+  profiles:
+    active: default
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/raulchin/microservice-configs.git
+          default-label: main
+          clone-on-start: true
+
+eureka:
+  instance:
+    instance-id: "${spring.application.name}:${server.port}"
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

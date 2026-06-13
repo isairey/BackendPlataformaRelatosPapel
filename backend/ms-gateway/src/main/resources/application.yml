@@ -1,0 +1,12 @@
+
+spring:
+  application:
+    name: ms-gateway
+server:
+  port: 4040
+
+eureka:
+  client:
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

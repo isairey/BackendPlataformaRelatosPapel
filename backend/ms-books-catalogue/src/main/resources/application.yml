@@ -1,0 +1,39 @@
+server:
+  port: 8999
+
+spring:
+  application:
+    name: ms-books-catalogue
+
+  datasource:
+    url: jdbc:mysql://localhost:3307/dbrelatospapelmysql?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Guayaquil
+    username: usrrelatospapelmysql
+    password: Abc123relatos
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: false
+    #instance-id: "${spring.application.name}:${random.value}"
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %X{uuid} - %msg%n"
+  #level:
+    #com.netflix.discovery: DEBUG
+    #org.springframework.cloud.netflix.eureka: DEBUG
+
+springdoc:
+  swagger-ui:
+    path: /swagger
